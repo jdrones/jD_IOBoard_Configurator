@@ -1,4 +1,4 @@
-jD_IOBoard_Configurator
+jD IOBoard Configurator
 =======================
 
 .NET Configurator for jD-IOBoard
