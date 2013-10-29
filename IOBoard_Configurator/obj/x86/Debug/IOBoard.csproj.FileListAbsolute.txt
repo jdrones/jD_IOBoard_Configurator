@@ -15,3 +15,18 @@ C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\jD-IOBoar
 C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\jD-IOBoard.exe
 C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\jD-IOBoard.pdb
 C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Debug\jD-IOBoard.exe.config
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Debug\jD-IOBoard.exe.manifest
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Debug\jD-IOBoard.application
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Debug\jD-IOBoard.exe
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Debug\jD-IOBoard.pdb
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\IOBoard.MainForm.resources
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\IOBoard.Pattern.resources
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\IOBoard.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\IOBoard.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\jD-IOBoard.TrustInfo.xml
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\jD-IOBoard.exe.manifest
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\jD-IOBoard.application
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\jD-IOBoard.exe
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\jD-IOBoard.pdb
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Debug\IOBoard.csprojResolveAssemblyReference.cache

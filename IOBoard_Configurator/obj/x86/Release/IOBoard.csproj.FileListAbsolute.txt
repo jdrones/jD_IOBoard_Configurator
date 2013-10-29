@@ -21,3 +21,6 @@ Z:\dotnet\IOBoard\obj\x86\Release\jD-IOBoard.pdb
 Z:\Programming\DotNET\IOBoard\bin\Release\jD-IOBoard.exe.config
 Z:\Programming\DotNET\IOBoard\obj\x86\Release\jD-IOBoard.exe
 Z:\Programming\DotNET\IOBoard\obj\x86\Release\jD-IOBoard.pdb
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Release\jD-IOBoard.exe.config
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\jD-IOBoard.exe
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\jD-IOBoard.pdb

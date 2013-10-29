@@ -94,6 +94,8 @@ namespace IOBoard
 
             sp.Close();
 
+//            txtLEFT.Text = eeprom[128];
+
             int startmbind = 64;
 
             if (!fail)
@@ -160,6 +162,10 @@ namespace IOBoard
                     }
                 }
             }
+
+            eeprom[128] = (byte)numLEFT.Value;
+
+
 
             printeeprom();
 
@@ -631,6 +637,11 @@ namespace IOBoard
         }
 
         private void pattern1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click(object sender, EventArgs e)
         {
 
         }

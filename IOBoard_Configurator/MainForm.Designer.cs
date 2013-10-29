@@ -88,6 +88,16 @@
             this.pattern2 = new IOBoard.Pattern();
             this.pattern1 = new IOBoard.Pattern();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label31 = new System.Windows.Forms.Label();
+            this.numREAR = new System.Windows.Forms.NumericUpDown();
+            this.label30 = new System.Windows.Forms.Label();
+            this.numFRONT = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
+            this.numRIGHT = new System.Windows.Forms.NumericUpDown();
+            this.label28 = new System.Windows.Forms.Label();
+            this.numLEFT = new System.Windows.Forms.NumericUpDown();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtLEFT = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -95,6 +105,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numREAR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFRONT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRIGHT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLEFT)).BeginInit();
             this.SuspendLayout();
             // 
             // BUT_ReadIOB
@@ -675,12 +690,165 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.Controls.Add(this.txtLEFT);
+            this.tabPage3.Controls.Add(this.label31);
+            this.tabPage3.Controls.Add(this.numREAR);
+            this.tabPage3.Controls.Add(this.label30);
+            this.tabPage3.Controls.Add(this.numFRONT);
+            this.tabPage3.Controls.Add(this.label29);
+            this.tabPage3.Controls.Add(this.numRIGHT);
+            this.tabPage3.Controls.Add(this.label28);
+            this.tabPage3.Controls.Add(this.numLEFT);
+            this.tabPage3.Controls.Add(this.label27);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(962, 443);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "General";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(36, 153);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(37, 13);
+            this.label31.TabIndex = 8;
+            this.label31.Text = "REAR";
+            // 
+            // numREAR
+            // 
+            this.numREAR.Location = new System.Drawing.Point(81, 151);
+            this.numREAR.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.numREAR.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numREAR.Name = "numREAR";
+            this.numREAR.Size = new System.Drawing.Size(54, 20);
+            this.numREAR.TabIndex = 7;
+            this.numREAR.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(36, 120);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(44, 13);
+            this.label30.TabIndex = 6;
+            this.label30.Text = "FRONT";
+            this.label30.Click += new System.EventHandler(this.label30_Click);
+            // 
+            // numFRONT
+            // 
+            this.numFRONT.Location = new System.Drawing.Point(81, 118);
+            this.numFRONT.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.numFRONT.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numFRONT.Name = "numFRONT";
+            this.numFRONT.Size = new System.Drawing.Size(54, 20);
+            this.numFRONT.TabIndex = 5;
+            this.numFRONT.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(36, 87);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(41, 13);
+            this.label29.TabIndex = 4;
+            this.label29.Text = "RIGHT";
+            // 
+            // numRIGHT
+            // 
+            this.numRIGHT.Location = new System.Drawing.Point(81, 85);
+            this.numRIGHT.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.numRIGHT.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numRIGHT.Name = "numRIGHT";
+            this.numRIGHT.Size = new System.Drawing.Size(54, 20);
+            this.numRIGHT.TabIndex = 3;
+            this.numRIGHT.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(36, 56);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(33, 13);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "LEFT";
+            // 
+            // numLEFT
+            // 
+            this.numLEFT.Location = new System.Drawing.Point(81, 54);
+            this.numLEFT.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.numLEFT.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numLEFT.Name = "numLEFT";
+            this.numLEFT.Size = new System.Drawing.Size(54, 20);
+            this.numLEFT.TabIndex = 1;
+            this.numLEFT.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(420, 12);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(59, 13);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Underwork";
+            // 
+            // txtLEFT
+            // 
+            this.txtLEFT.AutoSize = true;
+            this.txtLEFT.Location = new System.Drawing.Point(184, 56);
+            this.txtLEFT.Name = "txtLEFT";
+            this.txtLEFT.Size = new System.Drawing.Size(19, 13);
+            this.txtLEFT.TabIndex = 9;
+            this.txtLEFT.Text = "nc";
             // 
             // MainForm
             // 
@@ -714,6 +882,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numREAR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFRONT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRIGHT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLEFT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -778,6 +952,16 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.NumericUpDown numLEFT;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.NumericUpDown numREAR;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.NumericUpDown numFRONT;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.NumericUpDown numRIGHT;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label txtLEFT;
     }
 }
 
