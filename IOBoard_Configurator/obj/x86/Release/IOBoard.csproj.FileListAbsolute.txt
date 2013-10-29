@@ -1,0 +1,23 @@
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\IOBoard.MainForm.resources
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\IOBoard.Pattern.resources
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\IOBoard.Properties.Resources.resources
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Release\jD-IOBoard.exe.config
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Release\jD-IOBoard.exe
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Release\jD-IOBoard.pdb
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\jD-IOBoard.exe
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\jD-IOBoard.pdb
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Release\jD-IOBoard.exe.manifest
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Release\jD-IOBoard.application
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\jD-IOBoard.TrustInfo.xml
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\jD-IOBoard.exe.manifest
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\jD-IOBoard.application
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Release\GenerateResource-ResGen.read.4.tlog
+Z:\dotnet\IOBoard\bin\Release\jD-IOBoard.exe.config
+Z:\dotnet\IOBoard\obj\x86\Release\jD-IOBoard.exe
+Z:\dotnet\IOBoard\obj\x86\Release\jD-IOBoard.pdb
+Z:\Programming\DotNET\IOBoard\bin\Release\jD-IOBoard.exe.config
+Z:\Programming\DotNET\IOBoard\obj\x86\Release\jD-IOBoard.exe
+Z:\Programming\DotNET\IOBoard\obj\x86\Release\jD-IOBoard.pdb

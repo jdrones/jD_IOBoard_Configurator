@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/36/trunk/IOBoard/bin/Release
+END
+IOBoard.exe
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/23/trunk/IOBoard/bin/Release/IOBoard.exe
+END
+jD-IOBoard.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/36/trunk/IOBoard/bin/Release/jD-IOBoard.exe.manifest
+END
+IOBoard.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/23/trunk/IOBoard/bin/Release/IOBoard.exe.config
+END
+IOBoard.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/23/trunk/IOBoard/bin/Release/IOBoard.pdb
+END
+jD-IOBoard.exe
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/36/trunk/IOBoard/bin/Release/jD-IOBoard.exe
+END
+jD-IOBoard.application
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/36/trunk/IOBoard/bin/Release/jD-IOBoard.application
+END
+jD-IOBoard.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/31/trunk/IOBoard/bin/Release/jD-IOBoard.exe.config
+END
+jD-IOBoard.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/36/trunk/IOBoard/bin/Release/jD-IOBoard.pdb
+END

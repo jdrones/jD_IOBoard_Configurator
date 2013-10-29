@@ -1,0 +1,17 @@
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Debug\jD-IOBoard.exe.config
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Debug\jD-IOBoard.exe.manifest
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Debug\jD-IOBoard.application
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Debug\jD-IOBoard.exe
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\bin\Debug\jD-IOBoard.pdb
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\IOBoard.MainForm.resources
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\IOBoard.Pattern.resources
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\IOBoard.Properties.Resources.resources
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\jD-IOBoard.TrustInfo.xml
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\jD-IOBoard.exe.manifest
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\jD-IOBoard.application
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\jD-IOBoard.exe
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\jD-IOBoard.pdb
+C:\Documents and Settings\jpkh\Desktop\arducodes\IOBoard\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
