@@ -98,6 +98,7 @@ namespace IOBoard
 
             int startmbind = 64;
 
+            // Reading EEPROM values and put them to their right locations.
             if (!fail)
             {
                 for (int pos = 0; pos < 16 ;pos++) {
@@ -110,6 +111,16 @@ namespace IOBoard
                         ((Pattern)ctls[0]).FlightMode = (ushort)(eeprom[startmbind + pos * 2]);
                     }
                 }
+
+                // Single values
+                numLEFT.Value = eeprom[128];
+                numRIGHT.Value = eeprom[129];
+                numFRONT.Value = eeprom[130];
+                numREAR.Value = eeprom[131];
+
+                BAlarm_Percentage.Text = Convert.ToString(eeprom[152]);
+
+
             }
 
             printeeprom();
@@ -163,8 +174,13 @@ namespace IOBoard
                 }
             }
 
+            // Writing single values to their correct EEPROM locations
             eeprom[128] = (byte)numLEFT.Value;
+            eeprom[129] = (byte)numRIGHT.Value;
+            eeprom[130] = (byte)numFRONT.Value;
+            eeprom[131] = (byte)numREAR.Value;
 
+            eeprom[152] = (byte)Convert.ToByte(BAlarm_Percentage.Text);
 
 
             printeeprom();
@@ -189,7 +205,7 @@ namespace IOBoard
             {
                 try
                 {
-                    if (sp.upload(eeprom, 0, 126, 0))
+                    if (sp.upload(eeprom, 0, 160, 0))
                     {
                         MessageBox.Show("Done!");
                     }
@@ -616,35 +632,54 @@ namespace IOBoard
 
         }
 
-        private void label16_Click(object sender, EventArgs e)
+        private void BAlarm_Percentage_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
+        private void BAlarm_Percentage_TextChanged_1(object sender, EventArgs e)
+        {
+            UpdateBatteryVoltages();
+        }
+
+        private void label35_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pattern3_Load_1(object sender, EventArgs e)
+        private void BAlarm_Percentage_Validated(object sender, EventArgs e)
         {
-
+            UpdateBatteryVoltages();
         }
 
-        private void label17_Click(object sender, EventArgs e)
-        {
 
+        private void UpdateBatteryVoltages()
+        {
+            int TMP_Percentage;
+
+            try
+            {
+                TMP_Percentage = Convert.ToInt32(BAlarm_Percentage.Text);
+            }
+            catch
+            {
+                BAlarm_Percentage.Text = "";
+                TMP_Percentage = 0;
+            }
+
+            double Percentage_Multiplier = (double)TMP_Percentage / 100 + 1;
+
+            LBL_3S_Alarm.Text = Convert.ToString(9 * Percentage_Multiplier) + " v";
+            LBL_4S_Alarm.Text = Convert.ToString(12 * Percentage_Multiplier) + " v";
+            LBL_5S_Alarm.Text = Convert.ToString(15 * Percentage_Multiplier) + " v";
+            LBL_6S_Alarm.Text = Convert.ToString(18 * Percentage_Multiplier) + " v";
         }
 
-        private void pattern1_Load_1(object sender, EventArgs e)
+        private void BAlarm_Percentage_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            //.UpdateBatteryVoltages();
         }
-
-        private void label30_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
 
     }
 }

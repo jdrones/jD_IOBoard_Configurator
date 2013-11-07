@@ -88,16 +88,31 @@
             this.pattern2 = new IOBoard.Pattern();
             this.pattern1 = new IOBoard.Pattern();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label31 = new System.Windows.Forms.Label();
-            this.numREAR = new System.Windows.Forms.NumericUpDown();
-            this.label30 = new System.Windows.Forms.Label();
-            this.numFRONT = new System.Windows.Forms.NumericUpDown();
-            this.label29 = new System.Windows.Forms.Label();
-            this.numRIGHT = new System.Windows.Forms.NumericUpDown();
-            this.label28 = new System.Windows.Forms.Label();
-            this.numLEFT = new System.Windows.Forms.NumericUpDown();
-            this.label27 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.LBL_6S_Alarm = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.LBL_5S_Alarm = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.LBL_4S_Alarm = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.LBL_3S_Alarm = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.BAlarm_Percentage = new System.Windows.Forms.MaskedTextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtLEFT = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.numLEFT = new System.Windows.Forms.NumericUpDown();
+            this.numRIGHT = new System.Windows.Forms.NumericUpDown();
+            this.label31 = new System.Windows.Forms.Label();
+            this.numFRONT = new System.Windows.Forms.NumericUpDown();
+            this.label30 = new System.Windows.Forms.Label();
+            this.numREAR = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -106,10 +121,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numREAR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numFRONT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRIGHT)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numLEFT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRIGHT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFRONT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numREAR)).BeginInit();
             this.SuspendLayout();
             // 
             // BUT_ReadIOB
@@ -406,7 +423,6 @@
             this.label17.TabIndex = 8;
             this.label17.Text = "Light locations used by the program\r\nper frame types";
             this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label22
             // 
@@ -451,7 +467,6 @@
             this.label16.Size = new System.Drawing.Size(37, 13);
             this.label16.TabIndex = 1;
             this.label16.Text = "LEFT";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // pictureBox1
             // 
@@ -495,7 +510,6 @@
             this.tabPage2.Size = new System.Drawing.Size(962, 443);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "REAR Flash";
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // label15
             // 
@@ -664,7 +678,6 @@
             this.pattern3.Size = new System.Drawing.Size(901, 46);
             this.pattern3.TabIndex = 42;
             this.pattern3.Value = ((ushort)(0));
-            this.pattern3.Load += new System.EventHandler(this.pattern3_Load_1);
             // 
             // pattern2
             // 
@@ -685,20 +698,12 @@
             this.pattern1.Size = new System.Drawing.Size(901, 46);
             this.pattern1.TabIndex = 26;
             this.pattern1.Value = ((ushort)(0));
-            this.pattern1.Load += new System.EventHandler(this.pattern1_Load_1);
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage3.Controls.Add(this.txtLEFT);
-            this.tabPage3.Controls.Add(this.label31);
-            this.tabPage3.Controls.Add(this.numREAR);
-            this.tabPage3.Controls.Add(this.label30);
-            this.tabPage3.Controls.Add(this.numFRONT);
-            this.tabPage3.Controls.Add(this.label29);
-            this.tabPage3.Controls.Add(this.numRIGHT);
-            this.tabPage3.Controls.Add(this.label28);
-            this.tabPage3.Controls.Add(this.numLEFT);
+            this.tabPage3.Controls.Add(this.groupBox2);
+            this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.label27);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -707,148 +712,271 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "General";
             // 
-            // label31
+            // groupBox2
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(36, 153);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(37, 13);
-            this.label31.TabIndex = 8;
-            this.label31.Text = "REAR";
+            this.groupBox2.Controls.Add(this.label36);
+            this.groupBox2.Controls.Add(this.LBL_6S_Alarm);
+            this.groupBox2.Controls.Add(this.label41);
+            this.groupBox2.Controls.Add(this.LBL_5S_Alarm);
+            this.groupBox2.Controls.Add(this.label39);
+            this.groupBox2.Controls.Add(this.LBL_4S_Alarm);
+            this.groupBox2.Controls.Add(this.label37);
+            this.groupBox2.Controls.Add(this.LBL_3S_Alarm);
+            this.groupBox2.Controls.Add(this.label35);
+            this.groupBox2.Controls.Add(this.label32);
+            this.groupBox2.Controls.Add(this.BAlarm_Percentage);
+            this.groupBox2.Controls.Add(this.label33);
+            this.groupBox2.Location = new System.Drawing.Point(27, 221);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(309, 199);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Battery Alarm";
             // 
-            // numREAR
+            // LBL_6S_Alarm
             // 
-            this.numREAR.Location = new System.Drawing.Point(81, 151);
-            this.numREAR.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.numREAR.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numREAR.Name = "numREAR";
-            this.numREAR.Size = new System.Drawing.Size(54, 20);
-            this.numREAR.TabIndex = 7;
-            this.numREAR.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.LBL_6S_Alarm.AutoSize = true;
+            this.LBL_6S_Alarm.Location = new System.Drawing.Point(221, 89);
+            this.LBL_6S_Alarm.Name = "LBL_6S_Alarm";
+            this.LBL_6S_Alarm.Size = new System.Drawing.Size(22, 13);
+            this.LBL_6S_Alarm.TabIndex = 20;
+            this.LBL_6S_Alarm.Text = "0 v";
             // 
-            // label30
+            // label41
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(36, 120);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(44, 13);
-            this.label30.TabIndex = 6;
-            this.label30.Text = "FRONT";
-            this.label30.Click += new System.EventHandler(this.label30_Click);
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(191, 89);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(32, 13);
+            this.label41.TabIndex = 19;
+            this.label41.Text = "6S = \r\n";
             // 
-            // numFRONT
+            // LBL_5S_Alarm
             // 
-            this.numFRONT.Location = new System.Drawing.Point(81, 118);
-            this.numFRONT.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.numFRONT.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numFRONT.Name = "numFRONT";
-            this.numFRONT.Size = new System.Drawing.Size(54, 20);
-            this.numFRONT.TabIndex = 5;
-            this.numFRONT.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.LBL_5S_Alarm.AutoSize = true;
+            this.LBL_5S_Alarm.Location = new System.Drawing.Point(221, 74);
+            this.LBL_5S_Alarm.Name = "LBL_5S_Alarm";
+            this.LBL_5S_Alarm.Size = new System.Drawing.Size(22, 13);
+            this.LBL_5S_Alarm.TabIndex = 18;
+            this.LBL_5S_Alarm.Text = "0 v";
             // 
-            // label29
+            // label39
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(36, 87);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(41, 13);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "RIGHT";
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(191, 74);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(32, 13);
+            this.label39.TabIndex = 17;
+            this.label39.Text = "5S = \r\n";
             // 
-            // numRIGHT
+            // LBL_4S_Alarm
             // 
-            this.numRIGHT.Location = new System.Drawing.Point(81, 85);
-            this.numRIGHT.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.numRIGHT.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numRIGHT.Name = "numRIGHT";
-            this.numRIGHT.Size = new System.Drawing.Size(54, 20);
-            this.numRIGHT.TabIndex = 3;
-            this.numRIGHT.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.LBL_4S_Alarm.AutoSize = true;
+            this.LBL_4S_Alarm.Location = new System.Drawing.Point(221, 60);
+            this.LBL_4S_Alarm.Name = "LBL_4S_Alarm";
+            this.LBL_4S_Alarm.Size = new System.Drawing.Size(22, 13);
+            this.LBL_4S_Alarm.TabIndex = 16;
+            this.LBL_4S_Alarm.Text = "0 v";
             // 
-            // label28
+            // label37
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(36, 56);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(33, 13);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "LEFT";
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(191, 60);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(32, 13);
+            this.label37.TabIndex = 15;
+            this.label37.Text = "4S = \r\n";
+            // 
+            // LBL_3S_Alarm
+            // 
+            this.LBL_3S_Alarm.AutoSize = true;
+            this.LBL_3S_Alarm.Location = new System.Drawing.Point(221, 45);
+            this.LBL_3S_Alarm.Name = "LBL_3S_Alarm";
+            this.LBL_3S_Alarm.Size = new System.Drawing.Size(22, 13);
+            this.LBL_3S_Alarm.TabIndex = 14;
+            this.LBL_3S_Alarm.Text = "0 v";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(191, 45);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(32, 13);
+            this.label35.TabIndex = 13;
+            this.label35.Text = "3S = \r\n";
+            this.label35.Click += new System.EventHandler(this.label35_Click);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(9, 27);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(83, 26);
+            this.label32.TabIndex = 10;
+            this.label32.Text = "Margin for Alarm\r\n\r\n";
+            // 
+            // BAlarm_Percentage
+            // 
+            this.BAlarm_Percentage.Location = new System.Drawing.Point(100, 25);
+            this.BAlarm_Percentage.Mask = "00";
+            this.BAlarm_Percentage.Name = "BAlarm_Percentage";
+            this.BAlarm_Percentage.RejectInputOnFirstFailure = true;
+            this.BAlarm_Percentage.Size = new System.Drawing.Size(29, 20);
+            this.BAlarm_Percentage.TabIndex = 11;
+            this.BAlarm_Percentage.Text = "00";
+            this.BAlarm_Percentage.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.BAlarm_Percentage_MaskInputRejected);
+            this.BAlarm_Percentage.TextChanged += new System.EventHandler(this.BAlarm_Percentage_TextChanged_1);
+            this.BAlarm_Percentage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BAlarm_Percentage_KeyPress);
+            this.BAlarm_Percentage.Validated += new System.EventHandler(this.BAlarm_Percentage_Validated);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(136, 28);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(15, 13);
+            this.label33.TabIndex = 12;
+            this.label33.Text = "%";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.txtLEFT);
+            this.groupBox1.Controls.Add(this.label34);
+            this.groupBox1.Controls.Add(this.numLEFT);
+            this.groupBox1.Controls.Add(this.numRIGHT);
+            this.groupBox1.Controls.Add(this.label31);
+            this.groupBox1.Controls.Add(this.numFRONT);
+            this.groupBox1.Controls.Add(this.label30);
+            this.groupBox1.Controls.Add(this.numREAR);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Controls.Add(this.label28);
+            this.groupBox1.Location = new System.Drawing.Point(27, 23);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(309, 191);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "HighPower Output PINs";
+            // 
+            // txtLEFT
+            // 
+            this.txtLEFT.AutoSize = true;
+            this.txtLEFT.Location = new System.Drawing.Point(120, 27);
+            this.txtLEFT.Name = "txtLEFT";
+            this.txtLEFT.Size = new System.Drawing.Size(175, 130);
+            this.txtLEFT.TabIndex = 9;
+            this.txtLEFT.Text = resources.GetString("txtLEFT.Text");
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(50, 27);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(61, 13);
+            this.label34.TabIndex = 13;
+            this.label34.Text = "Output Port";
             // 
             // numLEFT
             // 
-            this.numLEFT.Location = new System.Drawing.Point(81, 54);
+            this.numLEFT.Location = new System.Drawing.Point(59, 50);
             this.numLEFT.Maximum = new decimal(new int[] {
             6,
             0,
             0,
             0});
-            this.numLEFT.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.numLEFT.Name = "numLEFT";
-            this.numLEFT.Size = new System.Drawing.Size(54, 20);
+            this.numLEFT.Size = new System.Drawing.Size(47, 20);
             this.numLEFT.TabIndex = 1;
-            this.numLEFT.Value = new decimal(new int[] {
-            2,
+            // 
+            // numRIGHT
+            // 
+            this.numRIGHT.Location = new System.Drawing.Point(59, 79);
+            this.numRIGHT.Maximum = new decimal(new int[] {
+            6,
             0,
             0,
             0});
+            this.numRIGHT.Name = "numRIGHT";
+            this.numRIGHT.Size = new System.Drawing.Size(47, 20);
+            this.numRIGHT.TabIndex = 3;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(16, 143);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(37, 13);
+            this.label31.TabIndex = 8;
+            this.label31.Text = "REAR";
+            // 
+            // numFRONT
+            // 
+            this.numFRONT.Location = new System.Drawing.Point(59, 110);
+            this.numFRONT.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.numFRONT.Name = "numFRONT";
+            this.numFRONT.Size = new System.Drawing.Size(47, 20);
+            this.numFRONT.TabIndex = 5;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(9, 114);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(44, 13);
+            this.label30.TabIndex = 6;
+            this.label30.Text = "FRONT";
+            // 
+            // numREAR
+            // 
+            this.numREAR.Location = new System.Drawing.Point(59, 140);
+            this.numREAR.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.numREAR.Name = "numREAR";
+            this.numREAR.Size = new System.Drawing.Size(47, 20);
+            this.numREAR.TabIndex = 7;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(12, 83);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(41, 13);
+            this.label29.TabIndex = 4;
+            this.label29.Text = "RIGHT";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(20, 52);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(33, 13);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "LEFT";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(420, 12);
+            this.label27.Location = new System.Drawing.Point(446, 12);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(59, 13);
             this.label27.TabIndex = 0;
             this.label27.Text = "Underwork";
             // 
-            // txtLEFT
+            // label36
             // 
-            this.txtLEFT.AutoSize = true;
-            this.txtLEFT.Location = new System.Drawing.Point(184, 56);
-            this.txtLEFT.Name = "txtLEFT";
-            this.txtLEFT.Size = new System.Drawing.Size(19, 13);
-            this.txtLEFT.TabIndex = 9;
-            this.txtLEFT.Text = "nc";
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(185, 26);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(76, 13);
+            this.label36.TabIndex = 21;
+            this.label36.Text = "Alarm voltages";
             // 
             // MainForm
             // 
@@ -884,10 +1012,14 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numREAR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numFRONT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRIGHT)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numLEFT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRIGHT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numFRONT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numREAR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -962,6 +1094,21 @@
         private System.Windows.Forms.NumericUpDown numRIGHT;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label txtLEFT;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.MaskedTextBox BAlarm_Percentage;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label LBL_6S_Alarm;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label LBL_5S_Alarm;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label LBL_4S_Alarm;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label LBL_3S_Alarm;
+        private System.Windows.Forms.Label label36;
     }
 }
 

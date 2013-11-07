@@ -24,3 +24,15 @@ Z:\Programming\DotNET\IOBoard\obj\x86\Release\jD-IOBoard.pdb
 C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Release\jD-IOBoard.exe.config
 C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\jD-IOBoard.exe
 C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\jD-IOBoard.pdb
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Release\jD-IOBoard.exe.manifest
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Release\jD-IOBoard.application
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Release\jD-IOBoard.exe
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\bin\Release\jD-IOBoard.pdb
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\IOBoard.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\IOBoard.MainForm.resources
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\IOBoard.Pattern.resources
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\IOBoard.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\IOBoard.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\jD-IOBoard.TrustInfo.xml
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\jD-IOBoard.exe.manifest
+C:\Users\Administrator\Documents\GitHub\jD_IOBoard_Configurator\IOBoard_Configurator\obj\x86\Release\jD-IOBoard.application

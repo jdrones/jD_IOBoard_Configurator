@@ -2905,6 +2905,18 @@
         +0Kma71pv5O77+f2p8P/D/O1R1FYPH0RAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="txtLEFT.Text" xml:space="preserve">
+    <value>    IOBoard HighPower PINs
+
+PIN     IOB V1.0        IOB V1.1 
+--------------------------------------------------------
+ O1       D8                 D7
+ O2       D9, PWM      D8
+ O3       D10, PWM    D9, PWM
+ O4       D4                 D10, PWM
+ O5       D3, PWM      D3, PWM
+ O6       D2                 D4</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>39</value>
   </metadata>
