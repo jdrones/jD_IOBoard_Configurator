@@ -89,6 +89,7 @@
             this.pattern1 = new IOBoard.Pattern();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label36 = new System.Windows.Forms.Label();
             this.LBL_6S_Alarm = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.LBL_5S_Alarm = new System.Windows.Forms.Label();
@@ -112,7 +113,6 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -733,6 +733,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Battery Alarm";
             // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(185, 26);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(76, 13);
+            this.label36.TabIndex = 21;
+            this.label36.Text = "Alarm voltages";
+            // 
             // LBL_6S_Alarm
             // 
             this.LBL_6S_Alarm.AutoSize = true;
@@ -968,15 +977,6 @@
             this.label27.Size = new System.Drawing.Size(59, 13);
             this.label27.TabIndex = 0;
             this.label27.Text = "Underwork";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(185, 26);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(76, 13);
-            this.label36.TabIndex = 21;
-            this.label36.Text = "Alarm voltages";
             // 
             // MainForm
             // 

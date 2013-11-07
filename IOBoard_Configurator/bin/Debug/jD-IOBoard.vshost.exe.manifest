@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="jD-IOBoard.exe" version="1.0.0.13" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="jD-IOBoard" version="1.0.5059.31168" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="jD-IOBoard" version="1.0.5059.33078" language="neutral" processorArchitecture="x86" />
     <commandLine file="jD-IOBoard.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -52,14 +52,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="jD-IOBoard.exe" size="216576">
-      <assemblyIdentity name="jD-IOBoard" version="1.0.5059.31168" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="jD-IOBoard.exe" size="216064">
+      <assemblyIdentity name="jD-IOBoard" version="1.0.5059.33078" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>1hNUuCLaf9kBfbBybk8HYRsZpxI=</dsig:DigestValue>
+        <dsig:DigestValue>RtKDpd0wy47cPGB8oxQ7EeG7RU8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

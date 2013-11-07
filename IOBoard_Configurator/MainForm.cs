@@ -627,7 +627,11 @@ namespace IOBoard
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show(string.Format("Jani Hirvinen            - General functionalities and UI{0}Michael Oborne        - Arduino libraries and original code{0}{0}Checkout more from http://www.jdrones.com/jDoc", Environment.NewLine), "Program Credits", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(string.Format(
+            "Jani Hirvinen          - General functionalities and UI\n" +
+            "Michael Oborne    - Arduino libraries and original code\n\n"+
+            "Checkout more from http://www.jdrones.com/jDoc",            
+                Environment.NewLine), "Program Credits", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //            box.ShowDialog();
 
         }
@@ -657,7 +661,7 @@ namespace IOBoard
         {
             int TMP_Percentage;
 
-            try
+            try // Catch empty/illegal strings before they break Convert class.
             {
                 TMP_Percentage = Convert.ToInt32(BAlarm_Percentage.Text);
             }
@@ -667,6 +671,7 @@ namespace IOBoard
                 TMP_Percentage = 0;
             }
 
+            // Calculate percentage multiplier for battery alarm calculations
             double Percentage_Multiplier = (double)TMP_Percentage / 100 + 1;
 
             LBL_3S_Alarm.Text = Convert.ToString(9 * Percentage_Multiplier) + " v";
@@ -677,9 +682,8 @@ namespace IOBoard
 
         private void BAlarm_Percentage_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //.UpdateBatteryVoltages();
+
         }
- 
 
     }
 }
