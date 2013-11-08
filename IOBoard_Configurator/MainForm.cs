@@ -120,6 +120,7 @@ namespace IOBoard
 
                 BAlarm_Percentage.Text = Convert.ToString(eeprom[152]);
 
+                if(eeprom[1000] <= 10) LBL_NOTIFY.Visible = false;
 
             }
 
@@ -628,6 +629,7 @@ namespace IOBoard
         {
 
             MessageBox.Show(string.Format(
+            "  \n" +
             "Jani Hirvinen          - General functionalities and UI\n" +
             "Michael Oborne    - Arduino libraries and original code\n\n"+
             "Checkout more from http://www.jdrones.com/jDoc",            
@@ -683,6 +685,11 @@ namespace IOBoard
         private void BAlarm_Percentage_KeyPress(object sender, KeyPressEventArgs e)
         {
 
+        }
+
+        private void BTN_Issues_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/jdrones/jD_IOBoard_Configurator/issues");
         }
 
     }

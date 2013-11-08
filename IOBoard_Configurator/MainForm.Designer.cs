@@ -79,15 +79,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pattern8 = new IOBoard.Pattern();
-            this.pattern7 = new IOBoard.Pattern();
-            this.pattern6 = new IOBoard.Pattern();
-            this.pattern5 = new IOBoard.Pattern();
-            this.pattern4 = new IOBoard.Pattern();
-            this.pattern3 = new IOBoard.Pattern();
-            this.pattern2 = new IOBoard.Pattern();
-            this.pattern1 = new IOBoard.Pattern();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.BTN_Issues = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label36 = new System.Windows.Forms.Label();
             this.LBL_6S_Alarm = new System.Windows.Forms.Label();
@@ -113,6 +106,15 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.LBL_NOTIFY = new System.Windows.Forms.Label();
+            this.pattern8 = new IOBoard.Pattern();
+            this.pattern7 = new IOBoard.Pattern();
+            this.pattern6 = new IOBoard.Pattern();
+            this.pattern5 = new IOBoard.Pattern();
+            this.pattern4 = new IOBoard.Pattern();
+            this.pattern3 = new IOBoard.Pattern();
+            this.pattern2 = new IOBoard.Pattern();
+            this.pattern1 = new IOBoard.Pattern();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -619,89 +621,10 @@
             this.label6.TabIndex = 27;
             this.label6.Text = "Pattern 1:";
             // 
-            // pattern8
-            // 
-            this.pattern8.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern8.FlightMode = ((ushort)(0));
-            this.pattern8.Location = new System.Drawing.Point(56, 368);
-            this.pattern8.Name = "pattern8";
-            this.pattern8.Size = new System.Drawing.Size(901, 46);
-            this.pattern8.TabIndex = 52;
-            this.pattern8.Value = ((ushort)(0));
-            // 
-            // pattern7
-            // 
-            this.pattern7.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern7.FlightMode = ((ushort)(0));
-            this.pattern7.Location = new System.Drawing.Point(56, 320);
-            this.pattern7.Name = "pattern7";
-            this.pattern7.Size = new System.Drawing.Size(901, 46);
-            this.pattern7.TabIndex = 50;
-            this.pattern7.Value = ((ushort)(0));
-            // 
-            // pattern6
-            // 
-            this.pattern6.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern6.FlightMode = ((ushort)(0));
-            this.pattern6.Location = new System.Drawing.Point(56, 272);
-            this.pattern6.Name = "pattern6";
-            this.pattern6.Size = new System.Drawing.Size(901, 46);
-            this.pattern6.TabIndex = 48;
-            this.pattern6.Value = ((ushort)(0));
-            // 
-            // pattern5
-            // 
-            this.pattern5.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern5.FlightMode = ((ushort)(0));
-            this.pattern5.Location = new System.Drawing.Point(56, 224);
-            this.pattern5.Name = "pattern5";
-            this.pattern5.Size = new System.Drawing.Size(901, 46);
-            this.pattern5.TabIndex = 46;
-            this.pattern5.Value = ((ushort)(0));
-            // 
-            // pattern4
-            // 
-            this.pattern4.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern4.FlightMode = ((ushort)(0));
-            this.pattern4.Location = new System.Drawing.Point(56, 176);
-            this.pattern4.Name = "pattern4";
-            this.pattern4.Size = new System.Drawing.Size(901, 46);
-            this.pattern4.TabIndex = 44;
-            this.pattern4.Value = ((ushort)(0));
-            // 
-            // pattern3
-            // 
-            this.pattern3.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern3.FlightMode = ((ushort)(0));
-            this.pattern3.Location = new System.Drawing.Point(56, 128);
-            this.pattern3.Name = "pattern3";
-            this.pattern3.Size = new System.Drawing.Size(901, 46);
-            this.pattern3.TabIndex = 42;
-            this.pattern3.Value = ((ushort)(0));
-            // 
-            // pattern2
-            // 
-            this.pattern2.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern2.FlightMode = ((ushort)(0));
-            this.pattern2.Location = new System.Drawing.Point(56, 80);
-            this.pattern2.Name = "pattern2";
-            this.pattern2.Size = new System.Drawing.Size(901, 46);
-            this.pattern2.TabIndex = 40;
-            this.pattern2.Value = ((ushort)(0));
-            // 
-            // pattern1
-            // 
-            this.pattern1.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern1.FlightMode = ((ushort)(0));
-            this.pattern1.Location = new System.Drawing.Point(56, 33);
-            this.pattern1.Name = "pattern1";
-            this.pattern1.Size = new System.Drawing.Size(901, 46);
-            this.pattern1.TabIndex = 26;
-            this.pattern1.Value = ((ushort)(0));
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.Controls.Add(this.BTN_Issues);
             this.tabPage3.Controls.Add(this.groupBox2);
             this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.label27);
@@ -711,6 +634,16 @@
             this.tabPage3.Size = new System.Drawing.Size(962, 443);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "General";
+            // 
+            // BTN_Issues
+            // 
+            this.BTN_Issues.Location = new System.Drawing.Point(593, 102);
+            this.BTN_Issues.Name = "BTN_Issues";
+            this.BTN_Issues.Size = new System.Drawing.Size(116, 23);
+            this.BTN_Issues.TabIndex = 16;
+            this.BTN_Issues.Text = "Issues";
+            this.BTN_Issues.UseVisualStyleBackColor = true;
+            this.BTN_Issues.Click += new System.EventHandler(this.BTN_Issues_Click);
             // 
             // groupBox2
             // 
@@ -972,17 +905,110 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(446, 12);
+            this.label27.Location = new System.Drawing.Point(590, 14);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(59, 13);
+            this.label27.Size = new System.Drawing.Size(286, 78);
             this.label27.TabIndex = 0;
-            this.label27.Text = "Underwork";
+            this.label27.Text = "UNDERWORK!!\r\n\r\nNew features added. You need to have at least jD-IOBoard\r\nversion " +
+                "v0.5 to have these features working.\r\n\r\nIssue handler at: http://github.com/jdro" +
+                "nes\r\n";
+            // 
+            // LBL_NOTIFY
+            // 
+            this.LBL_NOTIFY.AutoSize = true;
+            this.LBL_NOTIFY.ForeColor = System.Drawing.Color.Crimson;
+            this.LBL_NOTIFY.Location = new System.Drawing.Point(349, 24);
+            this.LBL_NOTIFY.Name = "LBL_NOTIFY";
+            this.LBL_NOTIFY.Size = new System.Drawing.Size(231, 13);
+            this.LBL_NOTIFY.TabIndex = 37;
+            this.LBL_NOTIFY.Text = "Please connect to jD-IOBoard and load settings";
+            // 
+            // pattern8
+            // 
+            this.pattern8.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern8.FlightMode = ((ushort)(0));
+            this.pattern8.Location = new System.Drawing.Point(56, 368);
+            this.pattern8.Name = "pattern8";
+            this.pattern8.Size = new System.Drawing.Size(901, 46);
+            this.pattern8.TabIndex = 52;
+            this.pattern8.Value = ((ushort)(0));
+            // 
+            // pattern7
+            // 
+            this.pattern7.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern7.FlightMode = ((ushort)(0));
+            this.pattern7.Location = new System.Drawing.Point(56, 320);
+            this.pattern7.Name = "pattern7";
+            this.pattern7.Size = new System.Drawing.Size(901, 46);
+            this.pattern7.TabIndex = 50;
+            this.pattern7.Value = ((ushort)(0));
+            // 
+            // pattern6
+            // 
+            this.pattern6.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern6.FlightMode = ((ushort)(0));
+            this.pattern6.Location = new System.Drawing.Point(56, 272);
+            this.pattern6.Name = "pattern6";
+            this.pattern6.Size = new System.Drawing.Size(901, 46);
+            this.pattern6.TabIndex = 48;
+            this.pattern6.Value = ((ushort)(0));
+            // 
+            // pattern5
+            // 
+            this.pattern5.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern5.FlightMode = ((ushort)(0));
+            this.pattern5.Location = new System.Drawing.Point(56, 224);
+            this.pattern5.Name = "pattern5";
+            this.pattern5.Size = new System.Drawing.Size(901, 46);
+            this.pattern5.TabIndex = 46;
+            this.pattern5.Value = ((ushort)(0));
+            // 
+            // pattern4
+            // 
+            this.pattern4.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern4.FlightMode = ((ushort)(0));
+            this.pattern4.Location = new System.Drawing.Point(56, 176);
+            this.pattern4.Name = "pattern4";
+            this.pattern4.Size = new System.Drawing.Size(901, 46);
+            this.pattern4.TabIndex = 44;
+            this.pattern4.Value = ((ushort)(0));
+            // 
+            // pattern3
+            // 
+            this.pattern3.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern3.FlightMode = ((ushort)(0));
+            this.pattern3.Location = new System.Drawing.Point(56, 128);
+            this.pattern3.Name = "pattern3";
+            this.pattern3.Size = new System.Drawing.Size(901, 46);
+            this.pattern3.TabIndex = 42;
+            this.pattern3.Value = ((ushort)(0));
+            // 
+            // pattern2
+            // 
+            this.pattern2.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern2.FlightMode = ((ushort)(0));
+            this.pattern2.Location = new System.Drawing.Point(56, 80);
+            this.pattern2.Name = "pattern2";
+            this.pattern2.Size = new System.Drawing.Size(901, 46);
+            this.pattern2.TabIndex = 40;
+            this.pattern2.Value = ((ushort)(0));
+            // 
+            // pattern1
+            // 
+            this.pattern1.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern1.FlightMode = ((ushort)(0));
+            this.pattern1.Location = new System.Drawing.Point(56, 33);
+            this.pattern1.Name = "pattern1";
+            this.pattern1.Size = new System.Drawing.Size(901, 46);
+            this.pattern1.TabIndex = 26;
+            this.pattern1.Value = ((ushort)(0));
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 568);
+            this.Controls.Add(this.LBL_NOTIFY);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.LBL_Version);
@@ -1109,6 +1135,8 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label LBL_3S_Alarm;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button BTN_Issues;
+        private System.Windows.Forms.Label LBL_NOTIFY;
     }
 }
 
