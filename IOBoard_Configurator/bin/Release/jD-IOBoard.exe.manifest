@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="jD-IOBoard.exe" version="1.0.0.13" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="jD-IOBoard.exe" version="1.0.0.16" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="jD-IOBoard" version="1.0.5060.22626" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="jD-IOBoard" version="1.0.5060.27686" language="neutral" processorArchitecture="x86" />
     <commandLine file="jD-IOBoard.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -52,14 +52,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="jD-IOBoard.exe" size="214528">
-      <assemblyIdentity name="jD-IOBoard" version="1.0.5060.22626" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="jD-IOBoard.exe" size="217088">
+      <assemblyIdentity name="jD-IOBoard" version="1.0.5060.27686" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>qx7JK8KEzeQFpaO1fAUEPNWvC1g=</dsig:DigestValue>
+        <dsig:DigestValue>lzgQVmYzo2fkQ1rUHn3GRQJRK50=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

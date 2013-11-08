@@ -18,6 +18,7 @@ namespace IOBoard
         /// 328 eeprom memory
         /// </summary>
         byte[] eeprom = new byte[1024];
+        bool hasRead = false;
 
         ushort[] patterns = new ushort[32];
 
@@ -119,15 +120,35 @@ namespace IOBoard
                 numREAR.Value = eeprom[131];
 
                 BAlarm_Percentage.Text = Convert.ToString(eeprom[152]);
+                if (eeprom[140] == 1) CB_FrSky.Checked = true;
 
-                if(eeprom[1000] <= 10) LBL_NOTIFY.Visible = false;
+                if(eeprom[1000] >= 10) {
+                    BUT_WriteIOB.Enabled = true;
+                    LBL_NOTIFY.Visible = false;
+                    hasRead = true;
+                }
 
             }
 
             printeeprom();
 
                 if (!fail)
-                    MessageBox.Show("Done!");
+                    MessageBox.Show("Download settings...\n   Done!");
+
+                if (eeprom[1012] < 5)
+                {
+                    BUT_WriteIOB.Enabled = false;
+
+                    MessageBox.Show(
+                        "Please update firmware on\n" +
+                        "your jD-IOBoard. Version\n" +
+                    "needs to be at least v0.5\n\n" +
+                    "Click \"Download Firmware\" button\n" +
+                    "on General tab!!"
+                    , "Outdated Firmware", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
         }
         void printeeprom()
         {
@@ -183,6 +204,21 @@ namespace IOBoard
 
             eeprom[152] = (byte)Convert.ToByte(BAlarm_Percentage.Text);
 
+            if (CB_FrSky.Checked)
+            {
+                eeprom[140] = 1;
+            }
+            else
+            {
+                eeprom[140] = 0;
+            }
+
+            if (CB_Factory_Reset.Checked)
+            {
+                eeprom[141] = 1;
+                CB_Factory_Reset.Checked = false;
+            }
+
 
             printeeprom();
 
@@ -206,9 +242,9 @@ namespace IOBoard
             {
                 try
                 {
-                    if (sp.upload(eeprom, 0, 160, 0))
+                    if (sp.upload(eeprom, 0, 180, 0))
                     {
-                        MessageBox.Show("Done!");
+                        MessageBox.Show("Upload settings..\n  Done!");
                     }
                     else
                     {
@@ -690,6 +726,11 @@ namespace IOBoard
         private void BTN_Issues_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/jdrones/jD_IOBoard_Configurator/issues");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.jDrones.com/downloads");
         }
 
     }

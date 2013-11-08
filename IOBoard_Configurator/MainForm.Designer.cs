@@ -79,8 +79,22 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pattern8 = new IOBoard.Pattern();
+            this.pattern7 = new IOBoard.Pattern();
+            this.pattern6 = new IOBoard.Pattern();
+            this.pattern5 = new IOBoard.Pattern();
+            this.pattern4 = new IOBoard.Pattern();
+            this.pattern3 = new IOBoard.Pattern();
+            this.pattern2 = new IOBoard.Pattern();
+            this.pattern1 = new IOBoard.Pattern();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BTN_downloads = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
             this.BTN_Issues = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.CB_Factory_Reset = new System.Windows.Forms.CheckBox();
+            this.CB_FrSky = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label36 = new System.Windows.Forms.Label();
             this.LBL_6S_Alarm = new System.Windows.Forms.Label();
@@ -105,16 +119,7 @@
             this.numREAR = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.LBL_NOTIFY = new System.Windows.Forms.Label();
-            this.pattern8 = new IOBoard.Pattern();
-            this.pattern7 = new IOBoard.Pattern();
-            this.pattern6 = new IOBoard.Pattern();
-            this.pattern5 = new IOBoard.Pattern();
-            this.pattern4 = new IOBoard.Pattern();
-            this.pattern3 = new IOBoard.Pattern();
-            this.pattern2 = new IOBoard.Pattern();
-            this.pattern1 = new IOBoard.Pattern();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -123,6 +128,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numLEFT)).BeginInit();
@@ -155,6 +162,7 @@
             // BUT_WriteIOB
             // 
             this.BUT_WriteIOB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BUT_WriteIOB.Enabled = false;
             this.BUT_WriteIOB.Location = new System.Drawing.Point(866, 515);
             this.BUT_WriteIOB.Name = "BUT_WriteIOB";
             this.BUT_WriteIOB.Size = new System.Drawing.Size(116, 23);
@@ -303,7 +311,7 @@
             this.LBL_Version.Name = "LBL_Version";
             this.LBL_Version.Size = new System.Drawing.Size(46, 13);
             this.LBL_Version.TabIndex = 34;
-            this.LBL_Version.Text = "1.0.0.13";
+            this.LBL_Version.Text = "1.0.0.15";
             // 
             // tabControl1
             // 
@@ -621,13 +629,93 @@
             this.label6.TabIndex = 27;
             this.label6.Text = "Pattern 1:";
             // 
+            // pattern8
+            // 
+            this.pattern8.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern8.FlightMode = ((ushort)(0));
+            this.pattern8.Location = new System.Drawing.Point(56, 368);
+            this.pattern8.Name = "pattern8";
+            this.pattern8.Size = new System.Drawing.Size(901, 46);
+            this.pattern8.TabIndex = 52;
+            this.pattern8.Value = ((ushort)(0));
+            // 
+            // pattern7
+            // 
+            this.pattern7.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern7.FlightMode = ((ushort)(0));
+            this.pattern7.Location = new System.Drawing.Point(56, 320);
+            this.pattern7.Name = "pattern7";
+            this.pattern7.Size = new System.Drawing.Size(901, 46);
+            this.pattern7.TabIndex = 50;
+            this.pattern7.Value = ((ushort)(0));
+            // 
+            // pattern6
+            // 
+            this.pattern6.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern6.FlightMode = ((ushort)(0));
+            this.pattern6.Location = new System.Drawing.Point(56, 272);
+            this.pattern6.Name = "pattern6";
+            this.pattern6.Size = new System.Drawing.Size(901, 46);
+            this.pattern6.TabIndex = 48;
+            this.pattern6.Value = ((ushort)(0));
+            // 
+            // pattern5
+            // 
+            this.pattern5.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern5.FlightMode = ((ushort)(0));
+            this.pattern5.Location = new System.Drawing.Point(56, 224);
+            this.pattern5.Name = "pattern5";
+            this.pattern5.Size = new System.Drawing.Size(901, 46);
+            this.pattern5.TabIndex = 46;
+            this.pattern5.Value = ((ushort)(0));
+            // 
+            // pattern4
+            // 
+            this.pattern4.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern4.FlightMode = ((ushort)(0));
+            this.pattern4.Location = new System.Drawing.Point(56, 176);
+            this.pattern4.Name = "pattern4";
+            this.pattern4.Size = new System.Drawing.Size(901, 46);
+            this.pattern4.TabIndex = 44;
+            this.pattern4.Value = ((ushort)(0));
+            // 
+            // pattern3
+            // 
+            this.pattern3.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern3.FlightMode = ((ushort)(0));
+            this.pattern3.Location = new System.Drawing.Point(56, 128);
+            this.pattern3.Name = "pattern3";
+            this.pattern3.Size = new System.Drawing.Size(901, 46);
+            this.pattern3.TabIndex = 42;
+            this.pattern3.Value = ((ushort)(0));
+            // 
+            // pattern2
+            // 
+            this.pattern2.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern2.FlightMode = ((ushort)(0));
+            this.pattern2.Location = new System.Drawing.Point(56, 80);
+            this.pattern2.Name = "pattern2";
+            this.pattern2.Size = new System.Drawing.Size(901, 46);
+            this.pattern2.TabIndex = 40;
+            this.pattern2.Value = ((ushort)(0));
+            // 
+            // pattern1
+            // 
+            this.pattern1.BackColor = System.Drawing.SystemColors.Control;
+            this.pattern1.FlightMode = ((ushort)(0));
+            this.pattern1.Location = new System.Drawing.Point(56, 33);
+            this.pattern1.Name = "pattern1";
+            this.pattern1.Size = new System.Drawing.Size(901, 46);
+            this.pattern1.TabIndex = 26;
+            this.pattern1.Value = ((ushort)(0));
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage3.Controls.Add(this.BTN_Issues);
+            this.tabPage3.Controls.Add(this.groupBox4);
+            this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Controls.Add(this.groupBox2);
             this.tabPage3.Controls.Add(this.groupBox1);
-            this.tabPage3.Controls.Add(this.label27);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -635,15 +723,79 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "General";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.BTN_downloads);
+            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.BTN_Issues);
+            this.groupBox4.Location = new System.Drawing.Point(639, 23);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(317, 191);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "NOTES";
+            // 
+            // BTN_downloads
+            // 
+            this.BTN_downloads.Location = new System.Drawing.Point(18, 148);
+            this.BTN_downloads.Name = "BTN_downloads";
+            this.BTN_downloads.Size = new System.Drawing.Size(143, 23);
+            this.BTN_downloads.TabIndex = 17;
+            this.BTN_downloads.Text = "Download Firmwares";
+            this.BTN_downloads.UseVisualStyleBackColor = true;
+            this.BTN_downloads.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(15, 21);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(286, 78);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "BETA SOFTWARE!\r\n\r\nNew features added. You need to have at least jD-IOBoard\r\nversi" +
+                "on v0.5 to have these features working.\r\n\r\nIssue handler at: http://github.com/j" +
+                "drones\r\n";
+            // 
             // BTN_Issues
             // 
-            this.BTN_Issues.Location = new System.Drawing.Point(593, 102);
+            this.BTN_Issues.Location = new System.Drawing.Point(18, 104);
             this.BTN_Issues.Name = "BTN_Issues";
-            this.BTN_Issues.Size = new System.Drawing.Size(116, 23);
+            this.BTN_Issues.Size = new System.Drawing.Size(143, 23);
             this.BTN_Issues.TabIndex = 16;
-            this.BTN_Issues.Text = "Issues";
+            this.BTN_Issues.Text = "Issues Tracking";
             this.BTN_Issues.UseVisualStyleBackColor = true;
             this.BTN_Issues.Click += new System.EventHandler(this.BTN_Issues_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.CB_Factory_Reset);
+            this.groupBox3.Controls.Add(this.CB_FrSky);
+            this.groupBox3.Location = new System.Drawing.Point(354, 23);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(279, 191);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Features";
+            // 
+            // CB_Factory_Reset
+            // 
+            this.CB_Factory_Reset.AutoSize = true;
+            this.CB_Factory_Reset.Location = new System.Drawing.Point(16, 159);
+            this.CB_Factory_Reset.Name = "CB_Factory_Reset";
+            this.CB_Factory_Reset.Size = new System.Drawing.Size(163, 17);
+            this.CB_Factory_Reset.TabIndex = 18;
+            this.CB_Factory_Reset.Text = "Factory Reset on next reboot";
+            this.CB_Factory_Reset.UseVisualStyleBackColor = true;
+            // 
+            // CB_FrSky
+            // 
+            this.CB_FrSky.AutoSize = true;
+            this.CB_FrSky.Location = new System.Drawing.Point(16, 27);
+            this.CB_FrSky.Name = "CB_FrSky";
+            this.CB_FrSky.Size = new System.Drawing.Size(134, 17);
+            this.CB_FrSky.TabIndex = 0;
+            this.CB_FrSky.Text = "FrSky Telemetry on/off";
+            this.CB_FrSky.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -793,6 +945,7 @@
             this.groupBox1.Controls.Add(this.numREAR);
             this.groupBox1.Controls.Add(this.label29);
             this.groupBox1.Controls.Add(this.label28);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.groupBox1.Location = new System.Drawing.Point(27, 23);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(309, 191);
@@ -902,106 +1055,16 @@
             this.label28.TabIndex = 2;
             this.label28.Text = "LEFT";
             // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(590, 14);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(286, 78);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "UNDERWORK!!\r\n\r\nNew features added. You need to have at least jD-IOBoard\r\nversion " +
-                "v0.5 to have these features working.\r\n\r\nIssue handler at: http://github.com/jdro" +
-                "nes\r\n";
-            // 
             // LBL_NOTIFY
             // 
             this.LBL_NOTIFY.AutoSize = true;
+            this.LBL_NOTIFY.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.LBL_NOTIFY.ForeColor = System.Drawing.Color.Crimson;
-            this.LBL_NOTIFY.Location = new System.Drawing.Point(349, 24);
+            this.LBL_NOTIFY.Location = new System.Drawing.Point(337, 23);
             this.LBL_NOTIFY.Name = "LBL_NOTIFY";
-            this.LBL_NOTIFY.Size = new System.Drawing.Size(231, 13);
+            this.LBL_NOTIFY.Size = new System.Drawing.Size(277, 13);
             this.LBL_NOTIFY.TabIndex = 37;
             this.LBL_NOTIFY.Text = "Please connect to jD-IOBoard and load settings";
-            // 
-            // pattern8
-            // 
-            this.pattern8.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern8.FlightMode = ((ushort)(0));
-            this.pattern8.Location = new System.Drawing.Point(56, 368);
-            this.pattern8.Name = "pattern8";
-            this.pattern8.Size = new System.Drawing.Size(901, 46);
-            this.pattern8.TabIndex = 52;
-            this.pattern8.Value = ((ushort)(0));
-            // 
-            // pattern7
-            // 
-            this.pattern7.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern7.FlightMode = ((ushort)(0));
-            this.pattern7.Location = new System.Drawing.Point(56, 320);
-            this.pattern7.Name = "pattern7";
-            this.pattern7.Size = new System.Drawing.Size(901, 46);
-            this.pattern7.TabIndex = 50;
-            this.pattern7.Value = ((ushort)(0));
-            // 
-            // pattern6
-            // 
-            this.pattern6.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern6.FlightMode = ((ushort)(0));
-            this.pattern6.Location = new System.Drawing.Point(56, 272);
-            this.pattern6.Name = "pattern6";
-            this.pattern6.Size = new System.Drawing.Size(901, 46);
-            this.pattern6.TabIndex = 48;
-            this.pattern6.Value = ((ushort)(0));
-            // 
-            // pattern5
-            // 
-            this.pattern5.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern5.FlightMode = ((ushort)(0));
-            this.pattern5.Location = new System.Drawing.Point(56, 224);
-            this.pattern5.Name = "pattern5";
-            this.pattern5.Size = new System.Drawing.Size(901, 46);
-            this.pattern5.TabIndex = 46;
-            this.pattern5.Value = ((ushort)(0));
-            // 
-            // pattern4
-            // 
-            this.pattern4.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern4.FlightMode = ((ushort)(0));
-            this.pattern4.Location = new System.Drawing.Point(56, 176);
-            this.pattern4.Name = "pattern4";
-            this.pattern4.Size = new System.Drawing.Size(901, 46);
-            this.pattern4.TabIndex = 44;
-            this.pattern4.Value = ((ushort)(0));
-            // 
-            // pattern3
-            // 
-            this.pattern3.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern3.FlightMode = ((ushort)(0));
-            this.pattern3.Location = new System.Drawing.Point(56, 128);
-            this.pattern3.Name = "pattern3";
-            this.pattern3.Size = new System.Drawing.Size(901, 46);
-            this.pattern3.TabIndex = 42;
-            this.pattern3.Value = ((ushort)(0));
-            // 
-            // pattern2
-            // 
-            this.pattern2.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern2.FlightMode = ((ushort)(0));
-            this.pattern2.Location = new System.Drawing.Point(56, 80);
-            this.pattern2.Name = "pattern2";
-            this.pattern2.Size = new System.Drawing.Size(901, 46);
-            this.pattern2.TabIndex = 40;
-            this.pattern2.Value = ((ushort)(0));
-            // 
-            // pattern1
-            // 
-            this.pattern1.BackColor = System.Drawing.SystemColors.Control;
-            this.pattern1.FlightMode = ((ushort)(0));
-            this.pattern1.Location = new System.Drawing.Point(56, 33);
-            this.pattern1.Name = "pattern1";
-            this.pattern1.Size = new System.Drawing.Size(901, 46);
-            this.pattern1.TabIndex = 26;
-            this.pattern1.Value = ((ushort)(0));
             // 
             // MainForm
             // 
@@ -1023,7 +1086,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(839, 521);
             this.Name = "MainForm";
-            this.Text = "jD-IOBoard Configurator (c)2012 by jDrones";
+            this.Text = "jD-IOBoard Configurator (c)2013 by jDrones";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -1037,7 +1100,10 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1137,6 +1203,11 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button BTN_Issues;
         private System.Windows.Forms.Label LBL_NOTIFY;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.CheckBox CB_FrSky;
+        private System.Windows.Forms.CheckBox CB_Factory_Reset;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button BTN_downloads;
     }
 }
 
